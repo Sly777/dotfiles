@@ -47,12 +47,11 @@ set expandtab " use spaces instead of tabs
 " --------------------------------------------------------------------------
 
 " vim-airline
-"let g:airline_powerline_fonts=1
-"let g:airline_theme='bubblegum'
-"let g:airline#extensions#tabline#enabled=1
-"set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h20
-"hi Normal ctermbg=none " mantain terminal background
-"set background=dark " background and theme
+let g:airline_powerline_fonts=1
+let g:airline_theme='luna'
+let g:airline#extensions#tabline#enabled=1
+set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h20
+set background=dark " background and theme
 set nowrap " long lines as just one line (have to scroll horizontally)
 "set t_Co=256 " 256 colors
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard'] " only show files that are not ignoreDTree
@@ -69,18 +68,12 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-" colorschemes
-Plugin 'chriskempson/base16-vim'
-" MOAR COLORSCHEMES
-Plugin 'flazz/vim-colorschemes'
-" vim-airline
-Plugin 'bling/vim-airline'
-" vim-airline-themes
-Plugin 'vim-airline/vim-airline-themes'
-" Ctrlp
-Plugin 'kien/ctrlp.vim'
+Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
+Plugin 'chriskempson/base16-vim' " colorschemes
+Plugin 'flazz/vim-colorschemes' " MOAR COLORSCHEMES
+Plugin 'bling/vim-airline' " vim-airline
+Plugin 'vim-airline/vim-airline-themes' " vim-airline-themes
+" Plugin 'kien/ctrlp.vim' " Ctrlp
 " NERDTree
 Plugin 'scrooloose/nerdtree'
 call vundle#end()           
