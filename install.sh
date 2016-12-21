@@ -5,6 +5,8 @@ unamestr=$(uname)
 if [[ "$unamestr" == 'Darwin' ]] 
 then 
   bash ./osx/install.sh;
+else
+  bash ./ubuntu/install.sh;
 fi
 
 # Configure 
