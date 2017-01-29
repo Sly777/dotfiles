@@ -2,9 +2,15 @@
 "  General 
 " --------------------------------------------------------------------------
 
-set encoding=utf-8 " the encoding displayed.
-set fileencoding=utf-8 " set fileencoding=utf-8 
-syntax on " enable syntax highlight 
+" the encoding displayed.
+set encoding=utf-8 
+set fileencoding=utf-8 
+" enable syntax highlight 
+syntax on 
+" modify file instead of overwriting it 
+set backupcopy=yes
+" remove trailing whitespace 
+autocmd BufWritePre *.js* :%s/\s\+$//e
 
 " --------------------------------------------------------------------------
 "  Mappings 
@@ -36,8 +42,8 @@ set laststatus=2 " show the status line all the time
 
 set expandtab " use spaces instead of tabs
 set smarttab
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set ai " auto indent
 set si " smart indent 
 set expandtab " use spaces instead of tabs
@@ -73,10 +79,34 @@ Plugin 'chriskempson/base16-vim' " colorschemes
 Plugin 'flazz/vim-colorschemes' " MOAR COLORSCHEMES
 Plugin 'bling/vim-airline' " vim-airline
 Plugin 'vim-airline/vim-airline-themes' " vim-airline-themes
+Plugin 'pangloss/vim-javascript' " syntax highlight for js
+Plugin 'mxw/vim-jsx' " syntax highlight for react jsx
+Plugin 'scrooloose/syntastic' " syntastic
+Plugin 'mtscout6/syntastic-local-eslint.vim' " syntastic use local eslint
+Plugin 'jiangmiao/auto-pairs' " insert or delete ({ in pairs 
 " Plugin 'kien/ctrlp.vim' " Ctrlp
 " NERDTree
 Plugin 'scrooloose/nerdtree'
 call vundle#end()           
 filetype plugin indent on    
 
+" --------------------------------------------------------------------------
+"  syntastic 
+" --------------------------------------------------------------------------
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = ['eslint']
+
+" --------------------------------------------------------------------------
+"  auto-pairs 
+" --------------------------------------------------------------------------
+
+let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '<':'>'} 
