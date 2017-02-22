@@ -8,8 +8,6 @@ then
 elif [[ "$unamestr" == *'ARCH'* ]] 
 then
   bash ./arch/install.sh;
-else
-  bash ./ubuntu/install.sh;
 fi
 
 # Configure 
