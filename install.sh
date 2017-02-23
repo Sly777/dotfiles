@@ -10,7 +10,9 @@ then
   bash ./arch/install.sh;
 fi
 
-# Configure 
+echo "Copying vimrc"
 cp .vimrc ~/.vimrc
+
+echo "Done"
 
 
