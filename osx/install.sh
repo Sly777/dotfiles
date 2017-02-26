@@ -36,7 +36,12 @@ if [ ! -d $NERD_FONTS_PATH ]; then
 fi
 
 echo "Installing iterm 2"
-brew cask install iterm2
+brew cask install iterm2 > /dev/null
+
+# Java related stuff 
 
 echo "Installing java 8"
-brew cask install java
+brew cask install java > /dev/null
+
+echo "Installing maven"
+brew install maven > /dev/null
