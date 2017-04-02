@@ -51,3 +51,9 @@ brew install gradle
 
 echo "Installing intellij community edition"
 brew cask install intellij-idea-ce > /dev/null
+
+# Configure git 
+
+echo "Configuring git"
+cp osx/.gitignore ~/.gitignore
+git config --global core.excludesfile '~/.gitignore'
