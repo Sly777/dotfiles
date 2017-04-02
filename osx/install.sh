@@ -46,5 +46,8 @@ brew cask install java > /dev/null
 echo "Installing maven"
 brew install maven > /dev/null
 
+echo "Installing gradle"
+brew install gradle
+
 echo "Installing intellij community edition"
 brew cask install intellij-idea-ce > /dev/null
