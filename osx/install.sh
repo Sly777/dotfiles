@@ -57,3 +57,6 @@ brew cask install intellij-idea-ce > /dev/null
 echo "Configuring git"
 cp osx/.gitignore ~/.gitignore
 git config --global core.excludesfile '~/.gitignore'
+
+echo "Copying bash files"
+cp .bash_profile ~/.bash_profile
