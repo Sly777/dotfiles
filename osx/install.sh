@@ -11,6 +11,9 @@ fi
 echo "Installing wget"
 brew install wget > /dev/null
 
+echo "Installing cmake"
+brew install cmake
+
 echo "Installing git"
 brew install git > /dev/null
 
@@ -24,9 +27,6 @@ if [ ! -e $VUNDLE_PATH ]; then
   git clone https://github.com/VundleVim/Vundle.vim.git $VUNDLE_PATH
   echo "Run VundleInstall inside vim"
 fi
-
-echo "Setting up vim as editor for git"
-git config --global core.editor $(which vim)
 
 echo "Installing nerd fonts"
 readonly NERD_FONTS_PATH=nerd-fonts
@@ -53,6 +53,9 @@ echo "Installing intellij community edition"
 brew cask install intellij-idea-ce > /dev/null
 
 # Configure git 
+
+echo "Setting up vim as editor for git"
+git config --global core.editor $(which vim)
 
 echo "Configuring git"
 cp osx/.gitignore ~/.gitignore

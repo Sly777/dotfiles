@@ -84,6 +84,10 @@ Plugin 'mxw/vim-jsx' " syntax highlight for react jsx
 Plugin 'scrooloose/syntastic' " syntastic
 Plugin 'mtscout6/syntastic-local-eslint.vim' " syntastic use local eslint
 Plugin 'scrooloose/nerdtree' " nerdtree 
+Plugin 'ervandew/supertab' " supetab
+Plugin 'Valloric/YouCompleteMe' "auto completion 
+Plugin 'SirVer/ultisnips' "snippets engine
+Plugin 'honza/vim-snippets' "snippets manager
 call vundle#end()           
 filetype plugin indent on    
 
@@ -106,3 +110,21 @@ let g:syntastic_javascript_checkers = ['eslint']
 " --------------------------------------------------------------------------
 
 let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', '`':'`', '<':'>'} 
+
+
+" --------------------------------------------------------------------------
+" YouCompleteMe
+" --------------------------------------------------------------------------
+"
+let g:ycm_filetype_blacklist = { 'tagbar' : 1, 'qf' : 1, 'notes' : 1, 'unite' : 1, 'text' : 1, 'vimwiki' : 1, 'pandoc' : 1, 'infolog' : 1, 'mail' : 1 }
+
+
+" make YCM compatible with UltiSnips (using supertab)
+" http://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme/22253548#22253548
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
