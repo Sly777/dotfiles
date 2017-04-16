@@ -83,10 +83,7 @@ Plugin 'pangloss/vim-javascript' " syntax highlight for js
 Plugin 'mxw/vim-jsx' " syntax highlight for react jsx
 Plugin 'scrooloose/syntastic' " syntastic
 Plugin 'mtscout6/syntastic-local-eslint.vim' " syntastic use local eslint
-Plugin 'jiangmiao/auto-pairs' " insert or delete ({ in pairs 
-" Plugin 'kien/ctrlp.vim' " Ctrlp
-" NERDTree
-Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree' " nerdtree 
 call vundle#end()           
 filetype plugin indent on    
 
@@ -102,7 +99,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
 let g:syntastic_javascript_checkers = ['eslint']
 
 " --------------------------------------------------------------------------
