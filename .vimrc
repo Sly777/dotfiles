@@ -72,8 +72,16 @@ let g:NERDTreeQuitOnOpen=1 " close NERDTree after a file is opened
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+let uname = system('uname -a')
+
+if match(uname, 'MINGW64') == 0
+  set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
+  call vundle#begin('$HOME/vimfiles/bundle/')
+else
+  set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#begin()
+endif
+
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
 Plugin 'chriskempson/base16-vim' " colorschemes
 Plugin 'flazz/vim-colorschemes' " MOAR COLORSCHEMES
