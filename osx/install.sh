@@ -38,6 +38,9 @@ fi
 echo "Installing iterm 2"
 brew cask install iterm2 > /dev/null
 
+echo "Installing tmux"
+brew install tmux > /dev/null
+
 # Java related stuff 
 
 echo "Installing java 8"
