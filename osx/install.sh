@@ -12,7 +12,7 @@ echo "Installing wget"
 brew install wget > /dev/null
 
 echo "Installing cmake"
-brew install cmake
+brew install cmake > /dev/null
 
 echo "Installing git"
 brew install git > /dev/null
@@ -47,7 +47,10 @@ echo "Installing maven"
 brew install maven > /dev/null
 
 echo "Installing gradle"
-brew install gradle
+brew install gradle > /dev/null
+
+echo "Installing tomcat"
+brew install tomcat > /dev/null 
 
 echo "Installing intellij community edition"
 brew cask install intellij-idea-ce > /dev/null

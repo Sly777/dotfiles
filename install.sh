@@ -13,6 +13,9 @@ fi
 echo "Copying vimrc"
 cp .vimrc ~/.vimrc
 
+echo "Copying ideavimrc"
+cp .ideavimrc ~/.ideavimrc
+
 echo "Done"
 
 
