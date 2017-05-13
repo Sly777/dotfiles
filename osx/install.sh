@@ -41,6 +41,11 @@ brew cask install iterm2 > /dev/null
 echo "Installing tmux"
 brew install tmux > /dev/null
 
+# Javascript related stuff 
+
+echo "Installing node"
+brew install node > /dev/null 
+
 # Java related stuff 
 
 echo "Installing java 8"
