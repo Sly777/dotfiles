@@ -20,14 +20,6 @@ brew install git > /dev/null
 echo "Installing vim"
 brew install vim > /dev/null
 
-echo "Installing vundle for vim"
-VUNDLE_PATH=~/.vim/bundle/Vundle.vim
-if [ ! -e $VUNDLE_PATH ]; then
-  echo "Cloning"
-  git clone https://github.com/VundleVim/Vundle.vim.git $VUNDLE_PATH
-  echo "Run VundleInstall inside vim"
-fi
-
 echo "Installing nerd fonts"
 readonly NERD_FONTS_PATH=nerd-fonts
 if [ ! -d $NERD_FONTS_PATH ]; then 
@@ -52,14 +44,5 @@ brew install gradle
 echo "Installing intellij community edition"
 brew cask install intellij-idea-ce > /dev/null
 
-# Configure git 
 
-echo "Setting up vim as editor for git"
-git config --global core.editor $(which vim)
 
-echo "Configuring git"
-cp osx/.gitignore ~/.gitignore
-git config --global core.excludesfile '~/.gitignore'
-
-echo "Copying bash files"
-cp .bash_profile ~/.bash_profile
