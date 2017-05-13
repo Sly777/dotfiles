@@ -19,4 +19,8 @@ function rshortcut {
 
 source "$shortcutsfile"
 
-
+unamestr=$(uname -a)
+if [[ "$unamestr" == *'Darwin'* ]] 
+then
+  alias "ij=open -a /Applications/IntelliJ\ IDEA\ CE.app"
+fi

@@ -8,15 +8,15 @@ then
 elif [[ "$unamestr" == *'Ubuntu'* ]]
 then 
   bash ./ubuntu/install.sh;
-elif [[ "$unamestr" == *'ARCH'* ]] 
-then
-  bash ./arch/install.sh;
 fi
 
 bash ./commons/install.sh;
 
 echo "Copying vimrc"
 cp .vimrc ~/.vimrc
+
+echo "Copying ideavimrc"
+cp .ideavimrc ~/.ideavimrc
 
 echo "Done"
 

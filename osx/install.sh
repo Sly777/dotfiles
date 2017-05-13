@@ -12,7 +12,7 @@ echo "Installing wget"
 brew install wget > /dev/null
 
 echo "Installing cmake"
-brew install cmake
+brew install cmake > /dev/null
 
 echo "Installing git"
 brew install git > /dev/null
@@ -30,6 +30,9 @@ fi
 echo "Installing iterm 2"
 brew cask install iterm2 > /dev/null
 
+echo "Installing tmux"
+brew install tmux > /dev/null
+
 # Java related stuff 
 
 echo "Installing java 8"
@@ -39,7 +42,10 @@ echo "Installing maven"
 brew install maven > /dev/null
 
 echo "Installing gradle"
-brew install gradle
+brew install gradle > /dev/null
+
+echo "Installing tomcat"
+brew install tomcat > /dev/null 
 
 echo "Installing intellij community edition"
 brew cask install intellij-idea-ce > /dev/null
