@@ -32,7 +32,7 @@ nnoremap <C-p> +P
 vnoremap <C-p> +P
 
 " access system clipboard
-set clipboard=unnamed
+" set clipboard+=unnamed
 set number " line numbers
 set laststatus=2 " show the status line all the time
 
