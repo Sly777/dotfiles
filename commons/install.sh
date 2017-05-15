@@ -1,3 +1,4 @@
+# Vim
 
 echo "Installing vundle for vim"
 VUNDLE_PATH=~/.vim/bundle/Vundle.vim
@@ -20,6 +21,15 @@ git config --global core.excludesfile '~/.gitignore'
 
 echo "Copying bash files"
 cp .bash_profile ~/.bash_profile
+
+#  Node global packages
+
+echo "Installing webpack"
+sudo npm install webpack -g 
+
+echo "Installing webpack-dev-server"
+npm install webpack-dev-server -g
+
 
 
 
