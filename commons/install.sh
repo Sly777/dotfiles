@@ -25,11 +25,14 @@ cp .bash_profile ~/.bash_profile
 #  Node global packages
 
 echo "Installing webpack"
-sudo npm install webpack -g 
+if ! npm list -g webpack; then
+  sudo npm install webpack -g 
+fi
 
 echo "Installing webpack-dev-server"
-npm install webpack-dev-server -g
-
+if ! npm list -g webpack-dev-server; then
+  sudo npm install webpack-dev-server -g
+fi
 
 
 

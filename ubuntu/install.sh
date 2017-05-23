@@ -33,6 +33,13 @@ sudo apt-get install -y curl > /dev/null
 echo "Installing Cloud foundry CLI" 
 sudo apt-get install -y cf-cli > /dev/null 
 
+# Javascript related stuff
+
+echo "Installing node"
+sudo apt-get install -y nodejs > /dev/null
+echo "Installing npm"
+sudo apt-get install -y npm > /dev/null
+
 # Java related stuff 
 
 echo "Installing java 7"
