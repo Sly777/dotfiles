@@ -15,6 +15,9 @@ bash ./commons/install.sh;
 echo "Copying vimrc"
 cp .vimrc ~/.vimrc
 
+echo "Copying tmux.conf"
+cp .tmux.conf ~/.tmux.conf
+
 echo "Copying ideavimrc"
 cp .ideavimrc ~/.ideavimrc
 
