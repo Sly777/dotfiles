@@ -16,9 +16,6 @@ sudo apt-get install -y tmux > /dev/null
 echo "Installing git" 
 sudo apt-get install -y git > /dev/null
 
-echo "Installing vim" 
-sudo apt-get install -y vim > /dev/null
-
 echo "Installing cmake"
 sudo apt-get install -y build-essential cmake > /dev/null
 

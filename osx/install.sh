@@ -17,9 +17,6 @@ brew install cmake > /dev/null
 echo "Installing git"
 brew install git > /dev/null
 
-echo "Installing vim"
-brew install vim > /dev/null
-
 echo "Installing nerd fonts"
 readonly NERD_FONTS_PATH=nerd-fonts
 if [ ! -d $NERD_FONTS_PATH ]; then 
