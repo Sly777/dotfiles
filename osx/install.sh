@@ -30,10 +30,6 @@ brew cask install iterm2 > /dev/null
 echo "Installing tmux"
 brew install tmux > /dev/null
 
-echo "Installing emacs"
-brew install emacs --with-cocoa
-brew linkapps emacs
-
 echo "Installing editorconfig"
 brew install editorconfig
 
