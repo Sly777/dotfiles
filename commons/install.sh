@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Configure git 
 
 echo "Setting up vim as editor for git"

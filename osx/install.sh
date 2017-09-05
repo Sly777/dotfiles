@@ -17,13 +17,6 @@ brew install cmake > /dev/null
 echo "Installing git"
 brew install git > /dev/null
 
-echo "Installing nerd fonts"
-readonly NERD_FONTS_PATH=nerd-fonts
-if [ ! -d $NERD_FONTS_PATH ]; then 
-  git clone https://github.com/ryanoasis/nerd-fonts $NERD_FONTS_PATH
-  bash -c "cd nerd-fonts && ./install.sh" > /dev/null 
-fi
-
 echo "Installing iterm 2"
 brew cask install iterm2 > /dev/null
 
