@@ -1,6 +1,0 @@
-source ~/.vimrc
-
-" Map keys to intellij actions
-:map \r :action ReformatCode<CR>
-:map \n :action NewClass<CR> 
-
