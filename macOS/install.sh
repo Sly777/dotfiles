@@ -18,9 +18,17 @@ code --install-extension James-Yu.latex-workshop
 
 # node 
 if ! brew ls --versions node > /dev/null ; then
-  brew install node
+  brew install node  
 else 
-  brew upgrade node
+  brew upgrade node 
+fi 
+
+# node tools
+# gulp 
+if ! npm list -g gulp > /dev/null ; then 
+  npm install -g gulp
+else 
+  npm update -g gulp
 fi 
 
 
