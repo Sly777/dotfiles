@@ -9,6 +9,9 @@ else
   echo $unamestr" not supported" 
 fi
 
+#vim
+cp .vimrc ~/.vimrc
+
 echo "done"
 
 
