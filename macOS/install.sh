@@ -31,4 +31,11 @@ else
   npm update -g gulp
 fi 
 
+#elm 
+if ! brew ls --versions elm > /dev/null ; then
+  brew install elm 
+else 
+  brew upgrade elm 
+fi
+
 
