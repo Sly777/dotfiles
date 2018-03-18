@@ -8,6 +8,12 @@ else
   brew update
 fi
 
+#iterm2
+if ! brew cask ls --versions iterm2  > /dev/null ; then
+  echo "installing iterm2..."  
+  brew cask install iterm2
+fi
+
 # latex tools
 if ! brew cask ls --versions mactex > /dev/null ; then
   echo "installing mactex..."  
