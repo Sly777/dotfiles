@@ -14,7 +14,6 @@ cp .vimrc ~/.vimrc
 #bash profile and scripts
 cp .bash_profile ~/.bash_profile
 cp -r scripts/. ~/scripts
-
 . ~/.bash_profile
 echo "done"
 

@@ -33,8 +33,13 @@ alias gc="git commit"
 alias gst="git status"
 alias ga.="git add ."
 alias gp="git push"
+alias gb="git branch"
+alias gcb="git checkout -b"
 ## todo
 alias atd="add-todo"
+## firefox
+alias firefox=/Applications/Firefox.app/Contents/MacOS/firefox 
+alias foxuni="firefox -profile ~/scripts/firefox/ https://dl.acm.org/ &"
 
 
 
