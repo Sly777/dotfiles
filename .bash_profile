@@ -32,6 +32,7 @@ source ~/scripts/todo/todos.sh
 alias gc="git commit"
 alias gst="git status"
 alias ga.="git add ."
+alias gp="git push"
 ## todo
 alias atd="add-todo"
 
