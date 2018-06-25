@@ -44,6 +44,27 @@ else
   brew upgrade elm 
 fi
 
+#python 
+pyframeworks="/usr/local/Frameworks"
+if [ -d "$pyframeworks" ]; then
+  sudo mkdir -p $pyframeworks
+  sudo chown $(whoami):admin $pyframeworks  
+fi
+
+if ! brew ls --versions python3 > /dev/null ; then
+  brew install python3 
+  brew link python
+else 
+  brew upgrade python3 
+fi
+
+
+if ! brew ls --versions pip3 > /dev/null ; then
+  brew install pip3 
+else 
+  brew upgrade pip3
+fi
+
 # vim
 # plugin manager 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
