@@ -30,11 +30,13 @@ source ~/scripts/todo/todos.sh
 #alias 
 ## git
 alias gc="git commit"
+alias gck="git checkout"
 alias gst="git status"
 alias ga.="git add ."
 alias gp="git push"
 alias gb="git branch"
 alias gcb="git checkout -b"
+alias gf="git fetch"
 ## todo
 alias atd="add-todo"
 ## firefox
